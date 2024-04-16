@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#overlay-container {
+  width: 1920px;
+  height: 1080px;
+  background-color: rgba(0, 0, 0, 0.6); /* Set opacity to 60% */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+#team-headers {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  width: 100%;
+  padding: 20px;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+}
+
+.team-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.team-header img {
+  width: 40px; /* Adjust logo size as needed */
+  height: 40px; /* Adjust logo size as needed */
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#score {
+  font-size: 32px;
+}
+
+#agents-container {
+  margin-top: 100px; /* Add margin to make space for team headers */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.team-agents {
+  display: flex;
+  flex-wrap: wrap; /* Allow player cards to wrap to next line */
+  gap: 20px; /* Add some spacing between player cards */
+}
+
+.agent {
+  width: 200px; /* Adjust player card width as needed */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 5px;
+}
+
+.player-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.player-details {
+  font-size: 14px;
+}
